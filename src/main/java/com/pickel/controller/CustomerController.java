@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/customer")
-@CrossOrigin(origins = "https://animated-malasada-71fbab.netlify.app/login")
+@CrossOrigin(origins = "https://animated-malasada-71fbab.netlify.app")
 @PreAuthorize("hasAuthority('CUSTOMER')")
 public class CustomerController {
     
