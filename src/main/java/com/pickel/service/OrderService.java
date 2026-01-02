@@ -1,5 +1,15 @@
 package com.pickel.service;
 
+import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.pickel.dto.OrderDetailDTO;
 import com.pickel.dto.OrderRequest;
 import com.pickel.entity.Order;
 import com.pickel.entity.OrderItem;
@@ -9,14 +19,6 @@ import com.pickel.exception.ResourceNotFoundException;
 import com.pickel.repository.OrderRepository;
 import com.pickel.repository.PickleRepository;
 import com.pickel.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.math.BigDecimal;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 @Service
 public class OrderService {
@@ -30,6 +32,7 @@ public class OrderService {
     @Autowired
     private PickleRepository pickleRepository;
     
+ // OrderService.java - Updated createOrder method
     @Transactional
     public Order createOrder(OrderRequest request, String username) {
         User customer = userRepository.findByUsername(username)
@@ -40,6 +43,15 @@ public class OrderService {
         order.setDeliveryAddress(request.getDeliveryAddress());
         order.setNotes(request.getNotes());
         order.setStatus(Order.OrderStatus.PENDING);
+        
+        // SET LOCATION FIELDS - CRITICAL
+        order.setDeliveryLatitude(request.getDeliveryLatitude());
+        order.setDeliveryLongitude(request.getDeliveryLongitude());
+        order.setMapLink(request.getMapLink()); // THIS MUST BE SET
+        order.setDeliveryCity(request.getDeliveryCity());
+        order.setDeliveryPincode(request.getDeliveryPincode());
+        order.setCustomerName(request.getCustomerName());
+        order.setCustomerPhone(request.getCustomerPhone());
         
         Set<OrderItem> orderItems = new HashSet<>();
         BigDecimal totalAmount = BigDecimal.ZERO;
@@ -64,21 +76,56 @@ public class OrderService {
         
         return orderRepository.save(order);
     }
-    
+    @Transactional(readOnly = true)  // ADDED
     public List<Order> getCustomerOrders(String username) {
         User customer = userRepository.findByUsername(username)
                 .orElseThrow(() -> new ResourceNotFoundException("User not found"));
-        return orderRepository.findByCustomerOrderByCreatedAtDesc(customer);
+        List<Order> orders = orderRepository.findByCustomerOrderByCreatedAtDesc(customer);
+        
+        // Force initialization of lazy-loaded relationships
+        orders.forEach(order -> {
+            order.getCustomer().getUsername(); // Initialize customer
+            order.getOrderItems().forEach(item -> {
+                item.getPickle().getName(); // Initialize pickle in each order item
+            });
+        });
+        
+        return orders;
     }
     
+    @Transactional(readOnly = true)  // ADDED
     public Order getOrderById(Long id) {
-        return orderRepository.findById(id)
+        Order order = orderRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Order not found"));
+        
+        // Force initialization
+        order.getCustomer().getUsername();
+        order.getOrderItems().forEach(item -> {
+            item.getPickle().getName();
+        });
+        
+        return order;
     }
     
+    @Transactional(readOnly = true)  // ADDED
     public List<Order> getAllOrders() {
-        return orderRepository.findAll();
+        List<Order> orders = orderRepository.findAll();
+        
+        // Force initialization of lazy-loaded relationships
+        orders.forEach(order -> {
+            order.getCustomer().getUsername(); // Initialize customer
+            order.getOrderItems().forEach(item -> {
+                item.getPickle().getName(); // Initialize pickle in each order item
+            });
+        });
+        
+        return orders;
     }
+    @Transactional(readOnly = true)
+    public List<OrderDetailDTO> getOrderDetailsByOrderId(Long orderId) {
+        return orderRepository.findOrderDetailsByOrderId(orderId);
+    }
+
     
     @Transactional
     public Order updateOrderStatus(Long id, Order.OrderStatus status) {

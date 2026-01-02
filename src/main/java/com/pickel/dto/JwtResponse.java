@@ -50,5 +50,9 @@ public class JwtResponse {
 		this.email = email;
 		this.role = role;
 	}
+	public JwtResponse() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
     
 }

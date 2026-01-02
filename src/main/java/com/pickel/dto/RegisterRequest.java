@@ -62,6 +62,22 @@ public class RegisterRequest {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	public RegisterRequest(@NotBlank(message = "Username is required") @Size(min = 3, max = 20) String username,
+			@NotBlank(message = "Email is required") @Email(message = "Email should be valid") String email,
+			@NotBlank(message = "Password is required") @Size(min = 6, message = "Password must be at least 6 characters") String password,
+			@NotBlank(message = "Full name is required") String fullName, String phoneNumber, String address) {
+		super();
+		this.username = username;
+		this.email = email;
+		this.password = password;
+		this.fullName = fullName;
+		this.phoneNumber = phoneNumber;
+		this.address = address;
+	}
+	public RegisterRequest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
     
     
 }

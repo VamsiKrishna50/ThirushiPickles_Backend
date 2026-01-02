@@ -7,7 +7,6 @@ import com.pickel.repository.PickleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
 @Service
@@ -36,6 +35,7 @@ public class PickleService {
         pickle.setDescription(request.getDescription());
         pickle.setPrice(request.getPrice());
         pickle.setStockQuantity(request.getStockQuantity());
+        pickle.setBaseWeight(request.getBaseWeight() != null ? request.getBaseWeight() : 250);
         pickle.setImageUrl(request.getImageUrl());
         pickle.setCategory(request.getCategory());
         pickle.setAvailable(true);
@@ -51,6 +51,7 @@ public class PickleService {
         pickle.setDescription(request.getDescription());
         pickle.setPrice(request.getPrice());
         pickle.setStockQuantity(request.getStockQuantity());
+        pickle.setBaseWeight(request.getBaseWeight() != null ? request.getBaseWeight() : 250);
         pickle.setImageUrl(request.getImageUrl());
         pickle.setCategory(request.getCategory());
         
