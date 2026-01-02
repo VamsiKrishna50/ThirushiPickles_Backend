@@ -29,7 +29,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/admin")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://animated-malasada-71fbab.netlify.app/login")
 @PreAuthorize("hasAuthority('ADMIN')")
 public class AdminController {
     
