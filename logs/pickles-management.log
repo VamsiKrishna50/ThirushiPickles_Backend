@@ -1,22 +1,233 @@
-2026-01-01 15:19:54 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 21548 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
-2026-01-01 15:19:54 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
-2026-01-01 15:19:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-01-01 15:19:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 191 ms. Found 8 JPA repository interfaces.
-2026-01-01 15:19:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-01-01 15:19:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-01-01 15:19:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
-2026-01-01 15:19:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-01-01 15:19:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2779 ms
-2026-01-01 15:19:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-01-01 15:19:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
-2026-01-01 15:19:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-01-01 15:19:58 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-01-01 15:19:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-01-01 15:19:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48692405
-2026-01-01 15:19:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-01-01 15:19:59 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-01-01 15:19:59 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2026-01-01 15:19:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-01-05 12:43:40 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 8748 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
+2026-01-05 12:43:40 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
+2026-01-05 12:43:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 12:43:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 8 JPA repository interfaces.
+2026-01-05 12:43:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-05 12:43:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 12:43:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-01-05 12:43:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 12:43:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3126 ms
+2026-01-05 12:43:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 12:43:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-01-05 12:43:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 12:43:45 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 12:43:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-05 12:43:48 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27b490de
+2026-01-05 12:43:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-05 12:43:49 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-05 12:43:49 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-05 12:43:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 12:44:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:44:08 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-05 12:44:10 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-05 12:44:10 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-05 12:44:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-05 12:44:12 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-05 12:44:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-05 12:44:13 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 33.606 seconds (process running for 35.139)
+2026-01-05 12:44:26 [http-nio-8080-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x030x0b0xc70xf30xec0x8d0x860xf00x120x1cL0x820x800x8440xec0x17}0xca#8x0xaa0xacJ0x130x9f0x0bz0xe30x1e\l ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:44:26 [http-nio-8080-exec-6] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x030xec0xd90xb20xacR0xc70x1e0x0a0xe5|0x180x8e0xdfu0xe40xcc?}0x0a0xded0xe1T0x050x140xdd0xc60xeb%0x1eY0x0e ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:44:26 [http-nio-8080-exec-4] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x03<0xc0m0xfd0x96%0xcdT0x0ed0xe9|0x0eC0xff0x0b%0x840xb6g0xe90x99yX[0xb00x110x8e0xce0xa7:x ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:44:26 [http-nio-8080-exec-3] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x030xc60x1c0xf9?0x0b0xff0xf00xac0x150xa10x010xb96oMA0xbfx0xf30x894<0xd20xcaT0xcf0x020xdd0xa10x890x020xce ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:44:26 [http-nio-8080-exec-5] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xf20x010x000x060xee0x030x030xf5-0xd60xa6B0xd70xc6">0x8fK0x069MoJ0xa1M*0x8a0xaf0xbf0xca0xe10xbeZ0xaf0xe50x87n0xa50xa4 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:44:26 [http-nio-8080-exec-2] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x120x010x000x070x0e0x030x03F0x9cb0x1e0xea0x8aO#P0x8b0xfeXS0xdbd0x9560xc30xf60x9e0x990x080xf20x070xa10xca0xa2~50xcd10x05 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:45:16 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-01-05 12:45:16 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 12:45:16 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 12:45:16 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:45:16 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-05 12:45:19 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-05 12:45:22 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 16020 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
+2026-01-05 12:45:22 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
+2026-01-05 12:45:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 12:45:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 8 JPA repository interfaces.
+2026-01-05 12:45:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-05 12:45:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 12:45:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-01-05 12:45:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 12:45:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1761 ms
+2026-01-05 12:45:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 12:45:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-01-05 12:45:24 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 12:45:24 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 12:45:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-05 12:45:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bb6869a
+2026-01-05 12:45:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-05 12:45:28 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-05 12:45:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-05 12:45:30 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 12:45:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:45:45 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-05 12:45:45 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-05 12:45:45 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-05 12:45:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-05 12:45:46 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-05 12:45:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-05 12:45:47 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 25.19 seconds (process running for 25.789)
+2026-01-05 12:46:17 [http-nio-8080-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xb20x010x000x060xae0x030x03,0x020xbe0xc20xe90x1c0xe60xa6d0xac0x060xf240xe90x880xe4%0x02x0x8720xdbvn0xe30xc90x0aP50x810xa1^ ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:49:42 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-01-05 12:49:42 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 12:49:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 12:49:42 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:49:42 [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-05 12:49:45 [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-05 12:49:47 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 14176 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
+2026-01-05 12:49:47 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
+2026-01-05 12:49:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 12:49:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 8 JPA repository interfaces.
+2026-01-05 12:49:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-05 12:49:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 12:49:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-01-05 12:49:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 12:49:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1736 ms
+2026-01-05 12:49:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 12:49:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-01-05 12:49:49 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 12:49:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 12:49:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-05 12:49:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4bc21e34
+2026-01-05 12:49:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-05 12:49:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-05 12:49:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-05 12:49:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 12:50:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:50:10 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-05 12:50:11 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-05 12:50:11 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-05 12:50:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-05 12:50:11 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-05 12:50:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-05 12:50:12 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 24.876 seconds (process running for 25.509)
+2026-01-05 12:52:40 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-01-05 12:52:40 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 12:52:40 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 12:52:40 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:52:40 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-05 12:52:43 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-05 12:52:46 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 17604 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
+2026-01-05 12:52:46 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
+2026-01-05 12:52:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 12:52:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 8 JPA repository interfaces.
+2026-01-05 12:52:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-05 12:52:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 12:52:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-01-05 12:52:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 12:52:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1739 ms
+2026-01-05 12:52:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 12:52:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-01-05 12:52:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 12:52:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 12:52:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-05 12:52:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dd23809
+2026-01-05 12:52:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-05 12:52:49 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-05 12:52:49 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-05 12:52:49 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -24,25 +235,149 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-01-01 15:20:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-01-01 15:20:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-01 15:20:02 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-01-01 15:20:03 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-01-01 15:20:03 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-01-01 15:20:04 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2026-01-01 15:20:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-01-01 15:20:05 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 11.876 seconds (process running for 12.909)
-2026-01-01 15:31:25 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s860ms117µs600ns).
-2026-01-01 15:44:48 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m15s443ms857µs400ns).
-2026-01-01 16:00:25 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m37s543ms562µs400ns).
-2026-01-01 16:11:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-01 16:11:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-01-01 16:11:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 78 ms
-2026-01-01 16:11:36 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
-2026-01-01 16:11:37 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
-2026-01-01 16:11:37 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-2026-01-01 16:11:37 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
-2026-01-01 16:11:37 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 12:52:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 12:52:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:52:51 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-05 12:52:51 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-05 12:52:51 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-05 12:52:52 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-05 12:52:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-05 12:52:52 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 7.054 seconds (process running for 7.648)
+2026-01-05 12:53:03 [http-nio-8080-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xb20x010x000x060xae0x030x030x1c0xa00xbc0x000xdb0xb1M0x990x150xe30x8f0x1b0xf80xea0xfe0xd0db0x040x85,0x1b0xea0x880x060xa90xf00xde0xb70x990x85` ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:56:37 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-01-05 12:56:37 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 12:56:37 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 12:56:37 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:56:37 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-05 12:56:37 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-05 12:56:40 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 12100 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
+2026-01-05 12:56:40 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
+2026-01-05 12:56:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 12:56:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 8 JPA repository interfaces.
+2026-01-05 12:56:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-05 12:56:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 12:56:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-01-05 12:56:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 12:56:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1817 ms
+2026-01-05 12:56:42 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 12:56:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-01-05 12:56:42 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 12:56:42 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 12:56:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-05 12:56:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b98355f
+2026-01-05 12:56:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-05 12:56:43 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-05 12:56:43 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-05 12:56:43 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-05 12:56:44 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 12:56:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 12:56:45 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-05 12:56:46 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-05 12:56:46 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-05 12:56:46 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-05 12:56:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-05 12:56:47 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 7.461 seconds (process running for 8.077)
+2026-01-05 12:57:07 [http-nio-8080-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x120x010x000x070x0e0x030x030xab0xa9u0xf5)!0xfb0x1e0xfb0xd40xf0Y:0x8e0xb9<W0x02Ox0xf30x920x870xb460x080x0ac%10x0a0x8f ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 12:58:09 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-05 12:58:09 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-05 12:58:09 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-01-05 12:58:09 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /
+2026-01-05 12:58:09 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-05 12:58:09 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-01-05 12:58:09 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-05 13:59:05 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m21s603ms943µs300ns).
+2026-01-05 14:05:04 [RMI TCP Connection(25)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-01-05 14:05:04 [RMI TCP Connection(25)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 14:05:04 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 14:05:04 [RMI TCP Connection(25)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 14:05:04 [RMI TCP Connection(25)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-05 14:05:04 [RMI TCP Connection(25)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-05 14:05:06 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 17388 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
+2026-01-05 14:05:06 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
+2026-01-05 14:05:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 14:05:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 8 JPA repository interfaces.
+2026-01-05 14:05:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-05 14:05:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 14:05:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-01-05 14:05:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 14:05:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1874 ms
+2026-01-05 14:05:08 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 14:05:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-01-05 14:05:09 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 14:05:09 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 14:05:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-05 14:05:09 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@772cf46b
+2026-01-05 14:05:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-05 14:05:09 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-05 14:05:09 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-05 14:05:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-05 14:05:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 14:05:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 14:05:12 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-05 14:05:12 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-05 14:05:12 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-05 14:05:13 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-05 14:05:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-05 14:05:13 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 7.772 seconds (process running for 8.413)
+2026-01-05 14:05:59 [http-nio-8080-exec-2] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x030xff0x1a ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-01-05 14:13:07 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-05 14:13:07 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-05 14:13:07 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 182 ms
+2026-01-05 14:13:07 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2026-01-05 14:13:07 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2026-01-05 14:13:07 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-01-05 14:13:07 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2026-01-05 14:13:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.address,
@@ -61,8 +396,8 @@
         users u1_0 
     where
         u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-2] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
-2026-01-01 16:11:38 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:09 [http-nio-8080-exec-9] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2026-01-05 14:13:09 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.address,
@@ -81,14 +416,19 @@
         users u1_0 
     where
         u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/pickles
-2026-01-01 16:11:38 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/orders
-2026-01-01 16:11:38 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
-2026-01-01 16:11:38 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/orders
-2026-01-01 16:11:38 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
-2026-01-01 16:11:38 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
-2026-01-01 16:11:38 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/pickles
+2026-01-05 14:13:10 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/pickles
+2026-01-05 14:13:10 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
+2026-01-05 14:13:10 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
+2026-01-05 14:13:10 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/orders
+2026-01-05 14:13:10 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/orders
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
+2026-01-05 14:13:10 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.address,
@@ -107,7 +447,7 @@
         users u1_0 
     where
         u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.address,
@@ -126,7 +466,7 @@
         users u1_0 
     where
         u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.address,
@@ -145,16 +485,82 @@
         users u1_0 
     where
         u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
-2026-01-01 16:11:38 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
-2026-01-01 16:11:38 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:38 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:38 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:38 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:38 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.full_name,
+        u1_0.oauth_provider,
+        u1_0.oauth_provider_id,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.full_name,
+        u1_0.oauth_provider,
+        u1_0.oauth_provider_id,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.full_name,
+        u1_0.oauth_provider,
+        u1_0.oauth_provider_id,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
+2026-01-05 14:13:10 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
+2026-01-05 14:13:10 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
+2026-01-05 14:13:10 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
+2026-01-05 14:13:10 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
     select
         p1_0.id,
         p1_0.available,
@@ -171,7 +577,24 @@
         pickles p1_0 
     where
         p1_0.available
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.available,
+        p1_0.base_weight,
+        p1_0.category,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.image_url,
+        p1_0.name,
+        p1_0.price,
+        p1_0.stock_quantity,
+        p1_0.updated_at 
+    from
+        pickles p1_0 
+    where
+        p1_0.available
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.address,
@@ -190,7 +613,7 @@
         users u1_0 
     where
         u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
     select
         u1_0.id,
         u1_0.address,
@@ -209,7 +632,45 @@
         users u1_0 
     where
         u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.full_name,
+        u1_0.oauth_provider,
+        u1_0.oauth_provider_id,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.full_name,
+        u1_0.oauth_provider,
+        u1_0.oauth_provider_id,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         o1_0.id,
         o1_0.created_at,
@@ -232,563 +693,7 @@
         o1_0.customer_id=? 
     order by
         o1_0.created_at desc
-2026-01-01 16:11:38 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
-2026-01-01 16:11:38 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        c1_0.id,
-        c1_0.created_at,
-        i1_0.cart_id,
-        i1_0.id,
-        i1_0.created_at,
-        i1_0.pickle_id,
-        i1_0.price_at_addition,
-        i1_0.quantity,
-        i1_0.selected_weight,
-        i1_0.updated_at,
-        c1_0.updated_at,
-        c1_0.user_id 
-    from
-        carts c1_0 
-    left join
-        cart_items i1_0 
-            on c1_0.id=i1_0.cart_id 
-    where
-        c1_0.user_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:11:38 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
-2026-01-01 16:11:38 [http-nio-8080-exec-10] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:38 [http-nio-8080-exec-10] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:38 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
-    select
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at 
-    from
-        pickles p1_0 
-    where
-        p1_0.available
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:38 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
-2026-01-01 16:11:39 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:11:39 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
-2026-01-01 16:11:39 [http-nio-8080-exec-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:11:39 [http-nio-8080-exec-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:11:39 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:11:39 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
-    select
-        c1_0.id,
-        c1_0.created_at,
-        i1_0.cart_id,
-        i1_0.id,
-        i1_0.created_at,
-        i1_0.pickle_id,
-        i1_0.price_at_addition,
-        i1_0.quantity,
-        i1_0.selected_weight,
-        i1_0.updated_at,
-        c1_0.updated_at,
-        c1_0.user_id 
-    from
-        carts c1_0 
-    left join
-        cart_items i1_0 
-            on c1_0.id=i1_0.cart_id 
-    where
-        c1_0.user_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         o1_0.id,
         o1_0.created_at,
@@ -811,568 +716,7 @@
         o1_0.customer_id=? 
     order by
         o1_0.created_at desc
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:11:39 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:42 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m16s576ms213µs800ns).
-2026-01-01 16:25:43 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
-2026-01-01 16:25:43 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
-2026-01-01 16:25:43 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-2026-01-01 16:25:43 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
-2026-01-01 16:25:43 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-10] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
-2026-01-01 16:25:44 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/pickles
-2026-01-01 16:25:44 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/orders
-2026-01-01 16:25:44 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
-2026-01-01 16:25:44 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
-2026-01-01 16:25:44 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
-2026-01-01 16:25:44 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:44 [http-nio-8080-exec-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:44 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at 
-    from
-        pickles p1_0 
-    where
-        p1_0.available
-2026-01-01 16:25:44 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
     select
         c1_0.id,
         c1_0.created_at,
@@ -1393,294 +737,7 @@
             on c1_0.id=i1_0.cart_id 
     where
         c1_0.user_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        o1_0.id,
-        o1_0.created_at,
-        o1_0.customer_id,
-        o1_0.customer_name,
-        o1_0.customer_phone,
-        o1_0.delivery_address,
-        o1_0.delivery_city,
-        o1_0.delivery_latitude,
-        o1_0.delivery_longitude,
-        o1_0.delivery_pincode,
-        o1_0.map_link,
-        o1_0.notes,
-        o1_0.status,
-        o1_0.total_amount,
-        o1_0.updated_at 
-    from
-        orders o1_0 
-    where
-        o1_0.customer_id=? 
-    order by
-        o1_0.created_at desc
-2026-01-01 16:25:44 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
-2026-01-01 16:25:44 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
-2026-01-01 16:25:44 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:44 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:44 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at 
-    from
-        pickles p1_0 
-    where
-        p1_0.available
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
     select
         c1_0.id,
         c1_0.created_at,
@@ -1701,7 +758,7 @@
             on c1_0.id=i1_0.cart_id 
     where
         c1_0.user_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1727,7 +784,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1753,7 +810,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1779,7 +836,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1805,7 +862,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1831,7 +888,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1857,7 +914,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1883,7 +940,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -1909,72 +966,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        o1_0.id,
-        o1_0.created_at,
-        o1_0.customer_id,
-        o1_0.customer_name,
-        o1_0.customer_phone,
-        o1_0.delivery_address,
-        o1_0.delivery_city,
-        o1_0.delivery_latitude,
-        o1_0.delivery_longitude,
-        o1_0.delivery_pincode,
-        o1_0.map_link,
-        o1_0.notes,
-        o1_0.status,
-        o1_0.total_amount,
-        o1_0.updated_at 
-    from
-        orders o1_0 
-    where
-        o1_0.customer_id=? 
-    order by
-        o1_0.created_at desc
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2000,7 +992,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2026,7 +1018,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2052,7 +1044,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2078,7 +1070,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2104,7 +1096,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2130,7 +1122,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2156,7 +1148,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2182,7 +1174,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2208,7 +1200,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2234,7 +1226,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2260,232 +1252,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:44 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 16:25:52 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/customer/cart
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/customer/cart
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.clearCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.clearCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        c1_0.id,
-        c1_0.created_at,
-        i1_0.cart_id,
-        i1_0.id,
-        i1_0.created_at,
-        i1_0.pickle_id,
-        i1_0.price_at_addition,
-        i1_0.quantity,
-        i1_0.selected_weight,
-        i1_0.updated_at,
-        c1_0.updated_at,
-        c1_0.user_id 
-    from
-        carts c1_0 
-    left join
-        cart_items i1_0 
-            on c1_0.id=i1_0.cart_id 
-    where
-        c1_0.user_id=?
-2026-01-01 16:25:52 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        ci1_0.id,
-        ci1_0.cart_id,
-        ci1_0.created_at,
-        ci1_0.pickle_id,
-        ci1_0.price_at_addition,
-        ci1_0.quantity,
-        ci1_0.selected_weight,
-        ci1_0.updated_at 
-    from
-        cart_items ci1_0 
-    where
-        ci1_0.cart_id=?
-2026-01-01 16:25:52 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/customer/cart
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/customer/cart
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.addToCart(com.pickel.dto.AddToCartRequest,org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.addToCart(com.pickel.dto.AddToCartRequest,org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
     select
         p1_0.id,
         p1_0.available,
@@ -2502,117 +1269,33 @@
         pickles p1_0 
     where
         p1_0.id=?
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
+        oi1_0.order_id,
+        oi1_0.id,
+        oi1_0.pickle_id,
+        p1_0.id,
+        p1_0.available,
+        p1_0.base_weight,
+        p1_0.category,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.image_url,
+        p1_0.name,
+        p1_0.price,
+        p1_0.stock_quantity,
+        p1_0.updated_at,
+        oi1_0.price,
+        oi1_0.quantity,
+        oi1_0.subtotal 
     from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    select
-        c1_0.id,
-        c1_0.created_at,
-        i1_0.cart_id,
-        i1_0.id,
-        i1_0.created_at,
-        i1_0.pickle_id,
-        i1_0.price_at_addition,
-        i1_0.quantity,
-        i1_0.selected_weight,
-        i1_0.updated_at,
-        c1_0.updated_at,
-        c1_0.user_id 
-    from
-        carts c1_0 
+        order_items oi1_0 
     left join
-        cart_items i1_0 
-            on c1_0.id=i1_0.cart_id 
+        pickles p1_0 
+            on p1_0.id=oi1_0.pickle_id 
     where
-        c1_0.user_id=?
-2026-01-01 16:25:52 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
-    insert 
-    into
-        cart_items
-        (cart_id, created_at, pickle_id, price_at_addition, quantity, selected_weight, updated_at) 
-    values
-        (?, ?, ?, ?, ?, ?, ?)
-2026-01-01 16:25:52 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
-2026-01-01 16:25:53 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:53 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
-2026-01-01 16:25:53 [http-nio-8080-exec-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:53 [http-nio-8080-exec-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 16:25:53 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 16:25:53 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
-    select
-        c1_0.id,
-        c1_0.created_at,
-        i1_0.cart_id,
-        i1_0.id,
-        i1_0.created_at,
-        i1_0.pickle_id,
-        i1_0.price_at_addition,
-        i1_0.quantity,
-        i1_0.selected_weight,
-        i1_0.updated_at,
-        c1_0.updated_at,
-        c1_0.user_id 
-    from
-        carts c1_0 
-    left join
-        cart_items i1_0 
-            on c1_0.id=i1_0.cart_id 
-    where
-        c1_0.user_id=?
-2026-01-01 16:25:53 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+        oi1_0.order_id=?
+2026-01-05 14:13:10 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
     select
         p1_0.id,
         p1_0.available,
@@ -2629,202 +1312,7 @@
         pickles p1_0 
     where
         p1_0.id=?
-2026-01-01 16:37:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m32s369ms33µs800ns).
-2026-01-01 16:51:29 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m13s979ms576µs200ns).
-2026-01-01 17:08:12 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m43s281ms61µs600ns).
-2026-01-01 17:13:34 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m22s52ms175µs100ns).
-2026-01-01 17:38:46 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
-2026-01-01 17:38:46 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/orders
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/orders
-2026-01-01 17:38:46 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/pickles
-2026-01-01 17:38:46 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/cart
-2026-01-01 17:38:46 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/customer/pickles
-2026-01-01 17:38:46 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
-2026-01-01 17:38:46 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
-2026-01-01 17:38:46 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 17:38:46 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
-    select
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at 
-    from
-        pickles p1_0 
-    where
-        p1_0.available
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        c1_0.id,
-        c1_0.created_at,
-        i1_0.cart_id,
-        i1_0.id,
-        i1_0.created_at,
-        i1_0.pickle_id,
-        i1_0.price_at_addition,
-        i1_0.quantity,
-        i1_0.selected_weight,
-        i1_0.updated_at,
-        c1_0.updated_at,
-        c1_0.user_id 
-    from
-        carts c1_0 
-    left join
-        cart_items i1_0 
-            on c1_0.id=i1_0.cart_id 
-    where
-        c1_0.user_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        o1_0.id,
-        o1_0.created_at,
-        o1_0.customer_id,
-        o1_0.customer_name,
-        o1_0.customer_phone,
-        o1_0.delivery_address,
-        o1_0.delivery_city,
-        o1_0.delivery_latitude,
-        o1_0.delivery_longitude,
-        o1_0.delivery_pincode,
-        o1_0.map_link,
-        o1_0.notes,
-        o1_0.status,
-        o1_0.total_amount,
-        o1_0.updated_at 
-    from
-        orders o1_0 
-    where
-        o1_0.customer_id=? 
-    order by
-        o1_0.created_at desc
-2026-01-01 17:38:46 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
-    select
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at 
-    from
-        pickles p1_0 
-    where
-        p1_0.id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2850,7 +1338,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2876,7 +1364,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2902,7 +1390,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2928,7 +1416,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2954,7 +1442,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -2980,7 +1468,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -3006,7 +1494,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -3032,7 +1520,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -3058,7 +1546,7 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+2026-01-05 14:13:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
     select
         oi1_0.order_id,
         oi1_0.id,
@@ -3084,708 +1572,50 @@
             on p1_0.id=oi1_0.pickle_id 
     where
         oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/pickles
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/cart
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/pickles
-2026-01-01 17:38:46 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getAvailablePickles(); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
-    select
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at 
-    from
-        pickles p1_0 
-    where
-        p1_0.available
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/cart
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CartController.getCart(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CartController]
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/customer/orders
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        c1_0.id,
-        c1_0.created_at,
-        i1_0.cart_id,
-        i1_0.id,
-        i1_0.created_at,
-        i1_0.pickle_id,
-        i1_0.price_at_addition,
-        i1_0.quantity,
-        i1_0.selected_weight,
-        i1_0.updated_at,
-        c1_0.updated_at,
-        c1_0.user_id 
-    from
-        carts c1_0 
-    left join
-        cart_items i1_0 
-            on c1_0.id=i1_0.cart_id 
-    where
-        c1_0.user_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
-    select
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at 
-    from
-        pickles p1_0 
-    where
-        p1_0.id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/customer/orders
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.pickel.controller.CustomerController.getMyOrders(org.springframework.security.core.Authentication); target is of class [com.pickel.controller.CustomerController]
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        u1_0.id,
-        u1_0.address,
-        u1_0.created_at,
-        u1_0.email,
-        u1_0.enabled,
-        u1_0.full_name,
-        u1_0.oauth_provider,
-        u1_0.oauth_provider_id,
-        u1_0.password,
-        u1_0.phone_number,
-        u1_0.role,
-        u1_0.updated_at,
-        u1_0.username 
-    from
-        users u1_0 
-    where
-        u1_0.username=?
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        o1_0.id,
-        o1_0.created_at,
-        o1_0.customer_id,
-        o1_0.customer_name,
-        o1_0.customer_phone,
-        o1_0.delivery_address,
-        o1_0.delivery_city,
-        o1_0.delivery_latitude,
-        o1_0.delivery_longitude,
-        o1_0.delivery_pincode,
-        o1_0.map_link,
-        o1_0.notes,
-        o1_0.status,
-        o1_0.total_amount,
-        o1_0.updated_at 
-    from
-        orders o1_0 
-    where
-        o1_0.customer_id=? 
-    order by
-        o1_0.created_at desc
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:46 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
-2026-01-01 17:38:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
-    select
-        oi1_0.order_id,
-        oi1_0.id,
-        oi1_0.pickle_id,
-        p1_0.id,
-        p1_0.available,
-        p1_0.base_weight,
-        p1_0.category,
-        p1_0.created_at,
-        p1_0.description,
-        p1_0.image_url,
-        p1_0.name,
-        p1_0.price,
-        p1_0.stock_quantity,
-        p1_0.updated_at,
-        oi1_0.price,
-        oi1_0.quantity,
-        oi1_0.subtotal 
-    from
-        order_items oi1_0 
-    left join
-        pickles p1_0 
-            on p1_0.id=oi1_0.pickle_id 
-    where
-        oi1_0.order_id=?
+2026-01-05 14:28:30 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m50s122ms666µs700ns).
+2026-01-05 14:35:28 [RMI TCP Connection(38)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-01-05 14:35:28 [RMI TCP Connection(38)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 14:35:28 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 14:35:28 [RMI TCP Connection(38)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 14:35:28 [RMI TCP Connection(38)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-05 14:35:29 [RMI TCP Connection(38)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-05 14:35:31 [main] INFO  c.pickel.PickelsBackendApplication - Starting PickelsBackendApplication using Java 17.0.12 with PID 4948 (C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend\target\classes started by nalla in C:\Users\nalla\Desktop\Pratyaksh_workspace\PickelsBackend)
+2026-01-05 14:35:31 [main] INFO  c.pickel.PickelsBackendApplication - The following 1 profile is active: "dev"
+2026-01-05 14:35:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 14:35:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 8 JPA repository interfaces.
+2026-01-05 14:35:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-05 14:35:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 14:35:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-01-05 14:35:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 14:35:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2289 ms
+2026-01-05 14:35:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 14:35:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-01-05 14:35:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 14:35:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 14:35:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-05 14:35:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53e4a19e
+2026-01-05 14:35:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-05 14:35:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-05 14:35:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-05 14:35:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-05 14:35:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 14:35:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 14:35:38 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-05 14:35:39 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-05 14:35:39 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-05 14:35:40 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-01-05 14:35:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-05 14:35:40 [main] INFO  c.pickel.PickelsBackendApplication - Started PickelsBackendApplication in 9.36 seconds (process running for 10.003)
+2026-01-05 14:38:01 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-01-05 14:38:01 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 14:38:01 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 14:38:01 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 14:38:01 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-05 14:38:01 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -16,7 +16,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin(origins = "https://animated-malasada-71fbab.netlify.app", maxAge = 3600)
+@CrossOrigin(origins = "https://legendary-chebakia-39c083.netlify.app", maxAge = 3600)
 public class ContactController {
 
     @Autowired

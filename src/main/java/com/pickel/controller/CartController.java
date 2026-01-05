@@ -30,7 +30,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/customer/cart")
-@CrossOrigin(origins = "https://animated-malasada-71fbab.netlify.app")
+@CrossOrigin(origins = "https://legendary-chebakia-39c083.netlify.app")
 @PreAuthorize("hasAuthority('CUSTOMER')")
 public class CartController {
     
